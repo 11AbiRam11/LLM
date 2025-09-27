@@ -1,0 +1,5 @@
+.ipynb_checkpoints
+__pycache__
+gpt2
+model.pth
+model1.pth
