@@ -193,3 +193,8 @@ Congrats now we've can test this out using ```generate()``` to get output from t
 Note: Most of the time the response may be non-sense because its just pre-trianed model, to get perfect response we need to fine-tune it,
 and this will be done soon.
 
+## Training the model on some data to get basic knowledge
+I trained the model on dataset called dollyData which is located in TrainingDat folder. 
+
+I've laptop with gtx 1650 4GB of VRAM, and I cleaned the dollydata txt file in such a way that, after each instructions, context and response block i added a special token call <|emdoftext|> which treats this token specially  by model, this token tells when to stop the response, if you want to get the idea in generate function if the new toke is this special token it will stop to generate new token.
+*** It took me about 32.5 hours to train this model on that dollyData txt file which is about 11.5MB in size, now the model has some general knowledge about the world, and I saves this model, but unfortunately I can't publish this model in GitHub due to large size, i will upload this llm im hugging face after experimenting on it. 
