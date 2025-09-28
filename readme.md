@@ -1,10 +1,10 @@
 # Large Language Model
 
 ## File Structure
-- `base`
-- `gpt-download3`
-- `gpt2`
-- `Preprocessing dolly_data`
+- `base` - Main file
+- `gpt-download3` - To download gpt2's weights
+- `gpt2` - Cleaned gpt2 file
+- `Preprocessing dolly_data` - Preprcessing the data for llm
 - `TrainingData` (folder)
 
 ---
@@ -192,6 +192,7 @@ Congrats now we've can test this out using ```generate()``` to get output from t
 
 Note: Most of the time the response may be non-sense because its just pre-trianed model, to get perfect response we need to fine-tune it,
 and this will be done soon.
+
 
 ## Training the model on some data to get basic knowledge
 I trained the model on dataset called dollyData which is located in TrainingDat folder. 
